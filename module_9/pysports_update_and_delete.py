@@ -1,4 +1,5 @@
-#Luke Wilkins 07-23-2023 
+#Luke Wilkins 07-27-2023 
+#Professor Haas CYBR410-T301
 #Python Code for SQL connector errorcode
 
 #import libararies for mysql
@@ -24,7 +25,7 @@ try:
     cursor = db.cursor()
     print("--DISPLAYING TEAM RECORDS--")
     #================================================== Question 2 answered.  
-    
+    #Inserting a new record (Cosmo Holder of Starlight)
     query = '''
     INSERT INTO player(first_name, last_name, team_id)
         VALUES('Cosmo', 'Holder of Starlight', 1)'''
@@ -44,7 +45,8 @@ try:
     for team in teams:
         print("Player ID: {}\nFirst Name: {}\nLast Name: {}\nTeam Name: {}\n".format(team[0],team[1],team[2],team[3]))
     print()
-#===================================================================================================================== Question 3 answered. 
+#===================================================================================================================== Question 3 answered.
+# Updating a new record to team 2.
     query = '''
     UPDATE player
     SET team_id = 2
@@ -65,6 +67,7 @@ try:
         print("Player ID: {}\nFirst Name: {}\nLast Name: {}\nTeam Name: {}\n".format(team[0],team[1],team[2],team[3]))
     print()
 #====================================================================================================================== Question 4 Answered
+# Deleting a new record to team 2.
     query = '''
     DELETE FROM player
     WHERE first_name = 'Cosmo' and last_name = 'Holder of Starlight';'''
