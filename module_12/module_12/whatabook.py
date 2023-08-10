@@ -1,3 +1,5 @@
+#Luke Wilkins, 08-09-2023
+#Professor Haas, CYBR410-T301
 import mysql.connector
 from mysql.connector import errorcode
 #Displays list of books.
@@ -133,7 +135,7 @@ q: is for quit
         db.commit()
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            print(" The supplies username or password are invalid")
+            print(" The supplied username or password are invalid")
         elif err.errno == errorcode.ER_BAD_DB_ERROR:
             print(" The specified database does not exist")
         
