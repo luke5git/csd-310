@@ -96,7 +96,7 @@ def show_menu():
     #Setting up the MySQL cofiguration.
     config = {
     "user": "root",
-    "password": "Pr4iS3tH310rd!",
+    "password": "MySQL8IsGreat!",
     "host": "127.0.0.1",
     "database": "whatabook",
     "raise_on_warnings": True
